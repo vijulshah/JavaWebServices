@@ -112,7 +112,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener{
         try{
 
             HttpClient httpClient = new DefaultHttpClient();
-            HttpPost httpPost = new HttpPost("http://192.168.0.102:8080/WebServices/SignUp");
+            HttpPost httpPost = new HttpPost("http://IP_ADDRESS:8080/WebServices/SignUp");
             List<NameValuePair> list = new ArrayList<NameValuePair>();
             list.add(new BasicNameValuePair("name",values[0]));
             list.add(new BasicNameValuePair("email_id",values[1]));
