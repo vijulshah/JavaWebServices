@@ -115,7 +115,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String response="";
         try{
             HttpClient httpClient = new DefaultHttpClient();
-            HttpPost httpPost=new HttpPost("http://192.168.0.102:8080/WebServices/Login");
+            HttpPost httpPost=new HttpPost("http://IP_ADDRESS:8080/WebServices/Login");
 
             List<NameValuePair> list=new ArrayList<NameValuePair>();
             list.add(new BasicNameValuePair("email", paramValues[0]));
